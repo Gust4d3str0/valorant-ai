@@ -1,0 +1,103 @@
+# =========================
+# Python / Poetry
+# =========================
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+
+# Poetry
+# MANTER pyproject.toml e poetry.lock no Git
+# NÃO ignorar poetry.lock
+
+# =========================
+# Jupyter Notebook
+# =========================
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+
+# =========================
+# YOLO / Ultralytics
+# =========================
+runs/
+weights/
+*.pt
+*.onnx
+*.engine
+*.torchscript
+*.tflite
+
+# =========================
+# Dataset Roboflow / Valorant
+# =========================
+dataset_valorant/
+*.zip
+*.rar
+*.7z
+
+# =========================
+# Vídeos e imagens geradas
+# =========================
+clips/
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.webm
+*.gif
+
+# Prints/resultados exportados
+prints/
+outputs/
+resultados/
+
+# =========================
+# Arquivos temporários
+# =========================
+*.log
+*.tmp
+*.cache
+.cache/
+
+# =========================
+# VS Code
+# =========================
+.vscode/
+.history/
+
+# =========================
+# Sistema operacional
+# =========================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =========================
+# Secrets / variáveis locais
+# =========================
+.env
+.env.local
+.env.*
+
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+
+dataset_valorant/
+clips/
+runs/
+
+*.pt
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.zip
+*.rar
+*.7z

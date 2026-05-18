@@ -1,0 +1,25 @@
+[project]
+name = "valorant-ai"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Gustavo Femiano",email = "henriquefemiano@outlook.com"}
+]
+requires-python = ">=3.12,<3.14"
+dependencies = [
+    "ultralytics (>=8.4.51,<9.0.0)",
+    "numpy (>=2.4.5,<3.0.0)",
+    "opencv-python (>=4.13.0.92,<5.0.0.0)",
+    "requests (>=2.34.2,<3.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "jupyter (>=1.1.1,<2.0.0)",
+    "ipykernel (>=7.2.0,<8.0.0)"
+]
