@@ -12,9 +12,12 @@ __pycache__/
 dist/
 build/
 
+# =========================
 # Poetry
-# MANTER pyproject.toml e poetry.lock no Git
-# NÃO ignorar poetry.lock
+# =========================
+# Manter estes arquivos no Git:
+# pyproject.toml
+# poetry.lock
 
 # =========================
 # Jupyter Notebook
@@ -23,28 +26,34 @@ build/
 *.nbconvert.ipynb
 
 # =========================
+# Dataset
+# =========================
+dataset_valorant/
+dataset/
+datasets/
+
+# =========================
 # YOLO / Ultralytics
 # =========================
 runs/
 weights/
+
+# Ignora modelos/exportações grandes por padrão
 *.pt
 *.onnx
 *.engine
 *.torchscript
 *.tflite
 
-# =========================
-# Dataset Roboflow / Valorant
-# =========================
-dataset_valorant/
-*.zip
-*.rar
-*.7z
+# MAS permite enviar o modelo treinado dentro da pasta models/
+!models/
+!models/*.pt
 
 # =========================
-# Vídeos e imagens geradas
+# Vídeos e mídias pesadas
 # =========================
 clips/
+videos/
 *.mp4
 *.avi
 *.mov
@@ -52,10 +61,19 @@ clips/
 *.webm
 *.gif
 
-# Prints/resultados exportados
+# =========================
+# Resultados exportados
+# =========================
 prints/
 outputs/
 resultados/
+
+# =========================
+# Arquivos compactados
+# =========================
+*.zip
+*.rar
+*.7z
 
 # =========================
 # Arquivos temporários
@@ -84,20 +102,3 @@ desktop.ini
 .env
 .env.local
 .env.*
-
-.venv/
-__pycache__/
-.ipynb_checkpoints/
-
-dataset_valorant/
-clips/
-runs/
-
-*.pt
-*.mp4
-*.avi
-*.mov
-*.mkv
-*.zip
-*.rar
-*.7z
